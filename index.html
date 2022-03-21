@@ -1,0 +1,654 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome to Sri Vijayadurga Peetham</title>
+    <script type="text/javascript" src="https://www.sivanandaonline.org/scripts/menus.js"></script>
+    <link type="text/css" media="all" rel="stylesheet" href="styles/stylesheet.css" />
+  
+
+    <link href="Styles/Styles.css" rel="Stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+    <script type="text/javascript" src="js/extras/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/extras/bootstrap.min.js"></script>
+
+
+
+    
+
+    <link type="text/css" href="styles/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+    <script type="text/javascript" src="https://www.sivanandaonline.org/scripts/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.sivanandaonline.org/scripts/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="https://www.sivanandaonline.org/scripts/jquery.jscrollpane.min.js"></script>
+
+    <style type="text/css" id="page-css">
+        /* Styles specific to this particular page */
+
+        .scroll-pane {
+            width: 100%;
+            height: 100px;
+            overflow: auto;
+            overflow-x: hidden;
+            padding-right: 10px;
+        }
+    </style>
+
+    <script type="text/javascript">
+       
+
+        var audioElement;
+        
+        function onMute(btnMutestr) {
+            if (btnMutestr.value == "Mute") {
+                
+                audioElement.pause();
+                document.getElementById("btnMute").value = "Un Mute";
+                
+            }
+            else {
+                audioElement.play();
+                document.getElementById("btnMute").value = "Mute";
+                
+            }
+        }
+
+ function loadpg() {
+   // onMute(document.getElementById("hdnBGmusic").value);
+   }
+
+
+        $(function()
+
+            {
+
+                $('.scroll-pane').jScrollPane();
+
+            });
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+    <center>
+	<video id="background-video" autoplay loop muted poster="">
+  <source src=".\images\v.mp4"" type="video/mp4">
+</video>
+</center>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-99602489-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <table width="888" border="0" align="center" cellpadding="0" cellspacing="0" id="wraper">
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="header">
+                    <tr>
+                        <td rowspan="3">
+                            <img src="images/logo2.png" alt="" width="121" height="126" />
+                        </td>
+                        <td id="HeaderNav">
+                            <a href="">Calendar</a> | <a href="">Archieves</a> | <a href="">Contact Us</a> | 
+							<a href=".\\sitemap.org\sitemapindex.html">Site Map</a> 
+							| <a href="">FAQ</a> | <a href="https://www.youtube.com/channel/UCgcFFUjkyQVkl4IOqdhlXOg">YouTube</a> | 
+							<a href=".\\donations.org\donationsindex.html">Donations</a>
+                  
+                        </td>
+                    
+                    
+                    </tr>
+                        <tr >
+						<td  rowspan="2" width="650"><h1 style = "font-size: 30px;" >Sri Vijaya Durga Peetam </h1></td>
+                        <!--<td><a href="#" class="fa fa-whatsapp"></a></td>
+                        
+                            <td><table width="10" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                 <bgcolor="#ce6902"><td width="45"><img src="images/BG-SearchLeft.png" alt="" width="45" height="32" /></td>
+                                    <td ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                       <form action="https://www.sivanandaonline.org/" method="get">
+                                      <input name="cmd" type="hidden" value="archives-search" />
+                                          <tr>
+                                            <td><input name="search_string" type="text" class="searchtxtbox" id="textfield" value="" /></td>
+                                            <td><input type="image" src="images/Button-Go.jpg" /></td>
+                                            <td><a href="#" class="fa fa-search"></a></td>
+                                          </tr>
+                                        </form>	  
+                                    </table></td>
+
+                              </tr>
+            
+                        </table></td>
+                        <td class = "rightnav">
+                        <td class="search-container">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Search.." name="search">
+                             <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </td>
+                        </td>
+                             </tr>
+                      <td>
+                        <form id="form"> 
+                            <input type="search" id="query" name="q" placeholder="Search...">
+                            <button type="submit"><a class="fa fa-search"></a></button>
+                        </form>
+                      </td>
+                    <tr>
+                        <td colspan="2"><img src="images/Menu-HLine.jpg" alt="" width="888" height="1" /></td>-->
+                        </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="header1">
+                    <tr>
+                        <td width="15"><img src="images/newleft1.png" alt="" width="15" height="32" /></td>
+                        <td class="nav" align="center">
+                            <ul id="nav">
+                                <li><a href="C:\Users\geeth\OneDrive\Desktop\www.sivanandaonline.org\www.sivanandaonline.org\index.html" class="active-link">Home</a></li>
+                                <li class='line'>
+                                    <li><a href=".\\aboutus.org\aboutusindex.html">AboutUs</a></li>
+                                    <li class='line'>
+                                        <li><a href="file:///Users/padalageethapriyaaravind/Downloads/www.sivanandaonline.org/www.sivanandaonline.org//aboutus.org/Philosophy2.html">Durgammavaru</a></li>
+                                        <li class='line'>
+                                            <li><a href="">Guruvugaru</a></li>
+                                            <li class='line'>
+                                                <li><a href="">Festivals</a></li>
+                                                <li class='line'>
+                                                    <li><a href="file:///Users/padalageethapriyaaravind/Downloads/www.sivanandaonline.org/www.sivanandaonline.org/Direction.org/howtoreachcopy.html">Directions</a></li>
+                                                    <li class='line'>
+                                                        <li><a href="">Annadanam</a></li>
+                                                        <li class='line'>
+                                                            <li><a href=".\\donations.org\donationsindex.html">Donations</a></li>
+                                                            <li class='line'>
+                                                                <li><a href="gallery\galindex.html">Gallery</a></li>
+                                                                <li class='line'>
+                                                                    <li><a href="">ContactUs</a></li>
+
+                            </ul>
+
+                        </td>
+
+                        <td width="15"><img src="images/newright.png" alt="" width="15" height="32" /></td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!--<tr>
+
+            <td>
+                <table border="0" align="right" cellpadding="0" cellspacing="0" class="searchbox">
+
+                    <tr>
+
+                        <td><img src="images/BG-SearchLine.jpg" alt="" width="311" height="1" /></td>
+
+                    </tr>-->
+
+                   <!-- <tr>
+
+                        <td>
+                            <table width="311" border="0" cellpadding="0" cellspacing="0">
+
+                                <tr>
+
+                                    <td width="45"><img src="images/BG-SearchLeft.png" alt="" width="45" height="32" /></td>
+
+                                    <td bgcolor="#ce6902">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                            <form action="https://www.sivanandaonline.org/" method="get">
+
+                                                <input name="cmd" type="hidden" value="archives-search" />
+
+                                                <tr>
+
+                                                    <td><input name="search_string" type="text" class="searchtxtbox" id="textfield" value="" /></td>
+
+                                                    <td><input type="image" src="images/Button-Go.jpg" /></td>
+
+                                                </tr>
+
+                                            </form>
+
+
+
+                                        </table>
+                                    </td>
+
+                                    <td width="42"><img src="images/BG-SearchRight.png" alt="" width="42" height="32" /></td>
+
+                                </tr>
+
+                            </table>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+		-->
+        <tr>
+            <td align="center">
+                <!--<param name="wmode" value="transparent" />
+
+                <param name="menu" value="false" />
+
+                <param name="LOOP" value="false" />-->
+
+                <img id="object1" src="images/final.png" alt="banner" width="600" height="390">
+            </td>
+
+
+        </tr>
+
+        <tr>
+            <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                  <!--  <tr>
+
+                        <td><img src="images/h12.jpg" alt="" width="888" height="13" /></td>
+
+                    </tr>-->
+
+                    <tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" id="content">
+
+                                <tr>
+                                    <td valign="top">
+                                        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                            <tr>
+
+                                                <td height="12"></td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td>
+
+                                                    <div id="dreadings">
+
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td width="85" rowspan="2"><h1 width="80" height="60" >Temple History</h1></td>
+                                                                <!--<td><img src="images/ShivanandaDailyReading.png" alt="" width="345" height="22" /></td>-->
+                                                            </tr>
+                                                            <tr>
+                                                                <!--<td height="22"><strong> &nbsp;Wednesday 19 January 2022 </strong></td>-->
+                                                            </tr>
+                                                        </table>
+
+
+                                                    </div>
+                                            </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td class="templehistory">
+                                             
+                                                    <div id="dReadingDisp" class="scroll-pane">
+                                                        <p align="justify">Sri Vijaya Durga Peetam is a spiritual center established in the village of Vedurupaka in the present day Raivaram Mandal, Ramachandrapuram taluka, East Godavari district.
+                                                            In the year 1974, the Peetam was hailed by the Vijayadurga Peethadhipati, who took a decision with his meticulous observation, ingenuity in problem solving activities, Vedic knowledge, Mantra Deeksha Tithi and weekly astrological calculations at the meeting of mystics and devotees.
+                                                            The pedestal was established with the sacred figures of Sri Chakra, Astabhujavyagravahini, Dakshinavrutha shanka, Eswarabanam, Ganapathi which are made from Panchaloha in the year 1972 &hellip;</p>
+                                                    </div>
+
+                                                    <p><img src="images/HLine.jpg" alt="" width="579" height="1" /></p><br />
+                                                </td>
+                                            </tr>
+
+
+
+                                            <tr>
+
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="200" valign="top">
+                                                                <table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                                                    <tr>
+																		<td><a href="#" class="fa fa-facebook"></a></td>
+																		<td><a href="#" class="fa fa-phone"></a></td>
+																		<td><a href="#" class="fa fa-whatsapp"></a></td>
+																		<td><a href="#" class="fa fa-youtube-play"></a></td>
+																		<td><a href="#" class="fa fa-envelope"></a></td>
+																		
+																		<!--<td>width="40"><a data-lbl="scl-icon:you-tube" href=""></a></td>
+																		<!--<td width="40"><img src="images/youtube.png" width="100" height="65" /></td>
+																		<td width="40"><img src="images/youtube.png" width="100" height="65" /></td>
+																		<td width="40"><img src="images/youtube.png" width="100" height="65" /></td>
+																		<td width="40"><img src="images/youtube.png" width="100" height="65" /></td>
+																		
+                                                                        <!--<td><a target="_blank" href="http://www.chidananda.org/"><img src="images/swamichidananda-banner.png" border="0" /></a></td>
+                                                                        <td><a target="_blank" href="https://www.dlshq.org/"><img src="images/thedivenlifesocity-banner.png" border="0" /></a></td>-->
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+
+                                        </table> 
+                                    </td>
+
+                                    <td width="265" valign="top" id="rightPannel">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                            <tr>
+
+                                                <td>
+                                                    <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                                        <tr>
+
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                                                    <tr>
+
+                                                                        <!--<td width="40"><img src="images/Icon-Thought4TheDay.png" alt="" width="37" height="34" /></td>-->
+																		
+																		 <td><h1 width="195" height="12">God Garu<h1/></td>
+                                                                        <!--<td><img src="" alt="" width="195" height="12" /></td>-->
+
+                                                                    </tr>
+
+                                                                    <tr>
+
+                                                                        <td height="5" colspan="2"></td>
+
+                                                                    </tr>
+
+                                                                    <tr>
+
+                                                                        <td colspan="2" class="thought4theday">
+                                                                            <p> <span>His Holiness, Mr. God (V.V.Subrahmanyam) (69), Head of Sri Vijaya Durga Peetham, Vedurupaka, popularly known as 'Vedurupaka God' and revered as a divine Incarnaton by his devotees, relates the background of his entry into the spiritual arena and explains the purpose of his visit to Prasanthi Nilayam in his own words.</span>
+                                                                                <p><strong></strong></p>
+                                                                            </p>
+                                                                        </td>
+
+                                                                    </tr>
+
+                                                                </table>
+                                                            </td>
+
+                                                        </tr>
+
+
+
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                                <td height="5" class="btmbrd"></td>
+
+                                            </tr>
+
+
+                                          <!-- <tr height="60">
+                                                <td><a href="https://donations.sivanandaonline.org" target="_blank" style="
+                      background-image: linear-gradient(to bottom, #ffffff -30%, #2ae169);
+                      display: block;
+                      width: 90%;
+                      margin: 0 auto;
+                      text-align: center;
+                      padding: 14px 0;
+                      color: #000000;
+                      font-size: 24px;
+                      font-weight: 300;
+                      text-decoration: none;
+                      margin-bottom: 4px;
+                      font-family: serif;
+                  ">Online Donations</a></td>
+                                            </tr>
+                                            <!--<tr>
+                                                <td height="5" class="btmbrd"></td>
+                                            </tr>
+                                            <tr height="60">
+                                                <td>
+                                                    <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="40"><img src="images/moon.png" /></td>
+                                                                        <td style="padding-left:5px;">
+                                                                            <a href="newsupdates/?p=836"><img src="images/broadcast.png" /></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="5" colspan="2"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="5" class="btmbrd"></td>
+                                            </tr>
+
+                                            <tr height="60">
+                                                <td>
+                                                    <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td width="40"><img src="images/youtube.png" width="42" height="30" /></td>
+                                                                        <td style="padding-left:5px;">
+                                                                            <a href="https://www.youtube.com/channel/UCDvqCbXY7BietQqqDrZgzOA/videos" style="text-decoration: none;"><span style="font-family: 'Times New Roman', Times; color: #ffb871; font-size:22px;">Y<span style="font-size:18px;">OU<span style="font-size:22px;">T</span>UBE</span></span></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="5" colspan="2"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="5" class="btmbrd"></td>
+                                            </tr>-->
+
+                                           
+
+                                         
+
+
+                                            <tr style="display:none;">
+
+                                                <td>
+                                                    <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                                        <tr>
+
+                                                            <td>
+                                                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+                                                                    <tr>
+
+                                                                        <td align="center">
+                                                                            <br/>
+                                                                            <table border="0" cellpadding="1" cellspacing="1" id="login" width="190">
+                                                                                <tr>
+                                                                                    <td style="padding-left:10px;">
+                                                                                        <table border="0" cellpadding="1" cellspacing="1">
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <td colspan="2">
+                                                                                                        <form method="post" action="./">
+                                                                                                            <input name="cmd" type="hidden" value="login" />
+                                                                                                            <input name="onfailure" type="hidden" value="displayindex-users" />
+                                                                                                            <input name="pageID" type="hidden" value="63790ED2B237CCEC57D52F5E7F85460E" />
+
+                                                                                                            <tr>
+                                                                                                                <td><img src="images/Login.jpg" alt="" width="61" height="14" /></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="10" style="color:#FF0000"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="17">Username</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><input name="username" type="text" class="txtbox" id="username" /></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="5"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="22">Password</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><input name="password" type="password" class="txtbox" id="password" /></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="5"></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td><a href="https://www.sivanandaonline.org/?format=html&cmd=users-passwordrecovery">Forgot password?</a></td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <td height="6" align="right"></td>
+                                                                                                            </tr>
+
+                                                                                                            <tr>
+                                                                                                                <td align="right"><input type="image" src="images/Button-SignIn.jpg" /></td>
+                                                                                                            </tr>
+                                                                                                        </form>
+                                                                                                    </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="2" height="50" valign="top" style="display:none;">
+                                                                                                    <img src="images/Arrow-left.png" alt="" width="4" height="8" /> New here? <a href="https://www.sivanandaonline.org/?format=html&cmd=users-register" style="text-decoration:underline"><strong> Sign Up</strong></a>
+                                                                                                </td>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+
+                                                                    </tr>
+
+                                                                </table>
+                                                            </td>
+
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </table>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td height="12" valign="top" colspan="2"></td>
+
+
+
+                                </tr>
+
+                            </table>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td id="footer"><a href="" class="active-link"></a>Contact Us</td>
+
+
+                    </tr>
+
+                </table>
+            </td>
+
+        </tr>
+        <tr>
+            <td height="5"> <audio loop autoplay id="bgMusicOAM" src="images/audio.mp3"></audio>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="linktxt">
+                <span style="float:right;valign=center">
+<input type="button" id="btnMute"  title="Mute / UnMute the background sound" value="Mute" onclick="onMute(this)"/>
+
+</span> 
+            </td>
+        </tr>
+      <!--<tr>
+        <td class="foot-row2">
+            <audio hidden preload="auto" controls="controls" autoplay="true" style="background-color: transparent; opacity: 0.9; width: 47px; background-position: left;" loop="loop" src="images/audio.mp3"></audio>
+            
+            <div style="float: right">
+                &nbsp;
+            </div>
+        </td></tr>-->
+
+            <td class="bottom">Copyright &copy; 2021 The Divine Life Society. All rights reserved.</td>
+
+        </tr>
+
+    </table>
+    <script  type="text/javascript">
+ audioElement = document.getElementById("bgMusicOAM")
+            audioElement.addEventListener('ended', function () {
+      }, true);
+         document.getElementById("btnMute").click();
+    if (History.replaceState) {
+            History.replaceState(null, null, location.href);
+        }
+    </script>
+
+</body>
+
+</html>
